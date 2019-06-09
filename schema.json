@@ -1,0 +1,33 @@
+{
+  "models": {
+    "planet": {
+      "attributes": {
+        "name": {
+          "type": "string"
+        }
+      },
+      "relationships": {
+        "moons": {
+          "type": "hasMany",
+          "model": "moon",
+          "inverse": "planet",
+          "dependent": "remove"
+        }
+      }
+    },
+    "moon": {
+      "attributes": {
+        "name": {
+          "type": "string"
+        }
+      },
+      "relationships": {
+        "planet": {
+          "type": "hasOne",
+          "model": "planet",
+          "inverse": "moons"
+        }
+      }
+    }
+  }
+}
