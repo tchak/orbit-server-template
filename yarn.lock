@@ -22,10 +22,10 @@
     core-js "^2.6.5"
     regenerator-runtime "^0.13.2"
 
-"@orbit-server/fastify@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@orbit-server/fastify/-/fastify-0.4.0.tgz#1ce7f4d4ffba71cf0f3cb0d9db8719ab791b4d98"
-  integrity sha512-mPued72cE/cZxYfqPC9iiPA5VpdNW0HL6PL9lJ+4KhvGJsjJgDp2byBoJy2E0/GjRk9HabTfw0uvxI5xrTUNxg==
+"@orbit-server/fastify@^0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@orbit-server/fastify/-/fastify-0.5.3.tgz#ea4eab30831be6159fa378f961095641a3561dd7"
+  integrity sha512-UwbNXMRiPTdpx3Lm9+5+ClatSqkwXAHyTWmhMoCtCcxICXYmePtN+MQ6R69dFlsQ/OY2I8TVd612oCL7WfBSOA==
   dependencies:
     "@orbit/data" "^0.16.0-beta.8"
     "@orbit/jsonapi" "^0.16.0-beta.8"
@@ -41,6 +41,7 @@
     graphql-subscriptions "^1.1.0"
     inflected "^2.0.4"
     knex "^0.17.6"
+    qs "^6.7.0"
 
 "@orbit/core@^0.16.0-beta.8":
   version "0.16.0-beta.8"
@@ -2837,6 +2838,11 @@ punycode@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
+
+qs@^6.7.0:
+  version "6.7.0"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
+  integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
 
 qs@~6.5.2:
   version "6.5.2"
