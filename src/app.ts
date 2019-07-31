@@ -1,6 +1,6 @@
 import { pluralize, singularize } from 'inflected';
 import { Schema, ModelDefinition } from '@orbit/data';
-import { Plugin, SQLSource } from '@orbit-server/fastify';
+import Server, { SQLSource } from '@orbit-server/fastify';
 import plugin from 'fastify-plugin';
 
 import schemaJson from './schema.json';
@@ -20,11 +20,13 @@ module.exports = plugin(function(fastify, _, next) {
     }
   });
 
-  fastify.register(Plugin, {
+  const server = new Server({
     source,
     jsonapi: true,
     graphql: true
   });
+
+  fastify.register(server.createHandler());
 
   next();
 });
