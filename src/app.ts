@@ -1,6 +1,7 @@
 import { pluralize, singularize } from 'inflected';
 import { Schema, ModelDefinition } from '@orbit/data';
-import Server, { SQLSource } from '@orbit-server/fastify';
+import Server from '@orbit-server/fastify';
+import SQLSource from 'orbit-sql';
 import plugin from 'fastify-plugin';
 
 import schemaJson from './schema.json';
