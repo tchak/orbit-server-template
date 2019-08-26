@@ -13,11 +13,12 @@
     "sqlite3": "^4.1.0"
   },
   "scripts": {
-    "routes": "yarn fastify print-routes ./dist/app.js",
+    "routes": "yarn fastify print-routes ./dist/src/app.js",
     "postinstall": "tsc",
     "start": "tsc-watch --onSuccess \"yarn start:dev\"",
-    "start:dev": "fastify start -l info -P dist/app.js",
-    "start:heroku": "fastify start -a '0.0.0.0' -l info dist/app.js"
+    "test": "qunit --require ts-node/register 'test/**/*-test.ts'",
+    "start:dev": "fastify start -l info -P dist/src/app.js",
+    "start:heroku": "fastify start -a '0.0.0.0' -l info dist/src/app.js"
   },
   "engines": {
     "node": "12.x"
@@ -26,6 +27,9 @@
     "@types/inflected": "^1.1.29",
     "@types/node": "^12.7.2",
     "tsc-watch": "^2.4.0",
+    "@types/qunit": "^2.9.0",
+    "qunit": "^2.9.2",
+    "ts-node": "^8.3.0",
     "typescript": "^3.5.3"
   }
 }
