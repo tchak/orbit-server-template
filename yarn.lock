@@ -14,10 +14,10 @@
   resolved "https://registry.yarnpkg.com/@apollographql/graphql-playground-html/-/graphql-playground-html-1.6.24.tgz#3ce939cb127fb8aaa3ffc1e90dff9b8af9f2e3dc"
   integrity sha512-8GqG48m1XqyXh4mIZrtB5xOhUwSsh1WsrrsaZQOEYYql3YN9DEu9OOSg0ILzXHZo/h2Q74777YE4YzlArQzQEQ==
 
-"@orbit-server/core@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@orbit-server/core/-/core-0.1.1.tgz#226da3c7eacd4dac8d02c129b831d2d0303f8a08"
-  integrity sha512-IZe4msF9fWbjj7oraskABpNcReEcNqRl1WMoFxjgPkCCgoJrkWW8eOZw7ESRUQxE6qItw5OofhigEn3y2/uRXQ==
+"@orbit-server/core@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@orbit-server/core/-/core-0.1.2.tgz#54c3745af4e11e9abb2a60d293064c7de21e5dab"
+  integrity sha512-ojodguyyMCq+nyJDi9HI8Mo+9VLgMG35TRsQVKwj3ruzCRFR7M+B5nPKbsm29r5tsJTW/DdIecbecqk0NFFUfg==
   dependencies:
     "@orbit/data" "^0.16.0"
     "@orbit/jsonapi" "^0.16.0"
@@ -25,12 +25,12 @@
     graphql-subscriptions "^1.1.0"
     orbit-graphql-schema "^0.1.1"
 
-"@orbit-server/fastify@^0.7.2":
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/@orbit-server/fastify/-/fastify-0.7.2.tgz#7c2db9b89130c6147462bd69216d1bfd6f85701f"
-  integrity sha512-3ubv6CcRvcuWFqt9VmdRofi9GIJ93XasEldK+0NHDBFKa1y5OIp4LD9cfmFQ3nT5C9v2SA9SerE5c+4e3w7Zgw==
+"@orbit-server/fastify@^0.7.3":
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/@orbit-server/fastify/-/fastify-0.7.3.tgz#d3c7e1f314fa0fc1615042c35b4d5ea0a2976a8f"
+  integrity sha512-HY97wBTfe4BKIH3QE4et7WjqrQCNQbrpn5FToRvKG/2Qmf+WPVSUcwwu03hzypYi1CCtgsUFc3uw64H8DHT20w==
   dependencies:
-    "@orbit-server/core" "^0.1.1"
+    "@orbit-server/core" "^0.1.2"
     apollo-server-fastify "^2.8.1"
     fastify "^2.7.1"
     fastify-cors "^2.1.3"
@@ -207,7 +207,7 @@
     "@types/graphql" "*"
     "@types/koa" "*"
 
-"@types/graphql@*", "@types/graphql@^14.2.3":
+"@types/graphql@*":
   version "14.2.3"
   resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-14.2.3.tgz#cfc6420a67eb20420786f90112357921974593b9"
   integrity sha512-UoCovaxbJIxagCvVfalfK7YaNhmxj3BQFRQ2RHQKLiu+9wNXhJnlbspsLHt/YQM99IaLUUFJNzCwzc6W0ypMeQ==
@@ -266,10 +266,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.14.8.tgz#fe444203ecef1162348cd6deb76c62477b2cc6e9"
   integrity sha512-I4+DbJEhLEg4/vIy/2gkWDvXBOOtPKV9EnLhYjMoqxcRW+TTZtUftkHktz/a8suoD5mUL7m6ReLrkPvSsCQQmw==
 
-"@types/node@^12.6.8":
-  version "12.6.8"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.6.8.tgz#e469b4bf9d1c9832aee4907ba8a051494357c12c"
-  integrity sha512-aX+gFgA5GHcDi89KG5keey2zf0WfZk/HAQotEamsK2kbey+8yGKcson0hbK8E+v0NArlCJQCqMP161YhV6ZXLg==
+"@types/node@^12.7.2":
+  version "12.7.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.2.tgz#c4e63af5e8823ce9cc3f0b34f7b998c2171f0c44"
+  integrity sha512-dyYO+f6ihZEtNPDcWNR1fkoTDf3zAK3lAABDze3mz6POyIercH0lEUawUFXlG8xaQZmm1yEBON/4TsYv/laDYg==
 
 "@types/range-parser@*":
   version "1.2.3"
@@ -1464,10 +1464,10 @@ fastify-accepts@^0.5.0:
     accepts "^1.3.3"
     fastify-plugin "^0.2.1"
 
-fastify-cli@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/fastify-cli/-/fastify-cli-1.1.0.tgz#e38e76c4d59fcf4b228d643612469e286dd1f89b"
-  integrity sha512-qyKOYlw++qp10dvGzn5LTQgQkJaMRGV9BV2U2YakJMEqL20NAGuYGAw3T9sZRTRyram9OER38Nb9DqQwMzyI9A==
+fastify-cli@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/fastify-cli/-/fastify-cli-1.2.0.tgz#2a1eafd899cfbf9435072168f3f690d168c7ad9c"
+  integrity sha512-nWFK1tNQnRq2fCMnLi6gfP4MTNrT4I/zMhPQYnfxU6zXFgMPjc3IO4b4xbWwOJPBLzDeM6ubGtb7FhrMQa8qqA==
   dependencies:
     chalk "^2.4.2"
     chokidar "^2.1.5"
@@ -3728,10 +3728,10 @@ split@0.3:
   dependencies:
     through "2"
 
-sqlite3@^4.0.9:
-  version "4.0.9"
-  resolved "https://registry.yarnpkg.com/sqlite3/-/sqlite3-4.0.9.tgz#cff74550fa5a1159956815400bdef69245557640"
-  integrity sha512-IkvzjmsWQl9BuBiM4xKpl5X8WCR4w0AeJHRdobCdXZ8dT/lNc1XS6WqvY35N6+YzIIgzSBeY5prdFObID9F9tA==
+sqlite3@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/sqlite3/-/sqlite3-4.1.0.tgz#e051fb9c133be15726322a69e2e37ec560368380"
+  integrity sha512-RvqoKxq+8pDHsJo7aXxsFR18i+dU2Wp5o12qAJOV5LNcDt+fgJsc2QKKg3sIRfXrN9ZjzY1T7SNe/DFVqAXjaw==
   dependencies:
     nan "^2.12.1"
     node-pre-gyp "^0.11.0"
@@ -3991,10 +3991,10 @@ ts-invariant@^0.4.0:
   dependencies:
     tslib "^1.9.3"
 
-tsc-watch@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/tsc-watch/-/tsc-watch-2.2.1.tgz#6e41a091e07d26dbcf5c815bfb514435ded33286"
-  integrity sha512-E61+ozEutLDgmXN+1+rkoCaUmd2g/cpa4mpEPMA3gPi89PBJiAcIUtH0xdCxeChXlR9TcuwOuTqu5jZDRhgfRw==
+tsc-watch@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/tsc-watch/-/tsc-watch-2.4.0.tgz#0b3b9d98d8032ba02acae1d38a7ebb16da0591f7"
+  integrity sha512-HTNRQm/P2YdP34b7bhaSOjVQ/YdTJGkNYyAD0scEcK7qXX7BWsBG8n3YlYHC9a6mX//gs5ouWQ3DXrBWjVp6rQ==
   dependencies:
     cross-spawn "^5.1.0"
     node-cleanup "^2.1.2"
