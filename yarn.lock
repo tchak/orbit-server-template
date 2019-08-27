@@ -14,31 +14,31 @@
   resolved "https://registry.yarnpkg.com/@apollographql/graphql-playground-html/-/graphql-playground-html-1.6.24.tgz#3ce939cb127fb8aaa3ffc1e90dff9b8af9f2e3dc"
   integrity sha512-8GqG48m1XqyXh4mIZrtB5xOhUwSsh1WsrrsaZQOEYYql3YN9DEu9OOSg0ILzXHZo/h2Q74777YE4YzlArQzQEQ==
 
-"@orbit-server/core@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@orbit-server/core/-/core-0.1.2.tgz#54c3745af4e11e9abb2a60d293064c7de21e5dab"
-  integrity sha512-ojodguyyMCq+nyJDi9HI8Mo+9VLgMG35TRsQVKwj3ruzCRFR7M+B5nPKbsm29r5tsJTW/DdIecbecqk0NFFUfg==
+"@orbit-server/core@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@orbit-server/core/-/core-0.2.0.tgz#527c7466227d47b5250bbfdf8065550f6df844b0"
+  integrity sha512-qP7gPZu4GZacNVIG7b8QwDl7O0PZsRS7CC/2XeYLcYT2wKs96GMsMzRaN1tat/oz4wEcJH1CbSaIXx4727fuZg==
   dependencies:
-    "@orbit/data" "^0.16.0"
-    "@orbit/jsonapi" "^0.16.0"
-    apollo-server "^2.8.1"
+    "@orbit/data" "^0.16.1"
+    "@orbit/jsonapi" "^0.16.1"
+    apollo-server "^2.9.0"
     graphql-subscriptions "^1.1.0"
-    orbit-graphql-schema "^0.1.1"
+    orbit-graphql-schema "^0.1.2"
 
-"@orbit-server/fastify@^0.7.3":
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/@orbit-server/fastify/-/fastify-0.7.3.tgz#d3c7e1f314fa0fc1615042c35b4d5ea0a2976a8f"
-  integrity sha512-HY97wBTfe4BKIH3QE4et7WjqrQCNQbrpn5FToRvKG/2Qmf+WPVSUcwwu03hzypYi1CCtgsUFc3uw64H8DHT20w==
+"@orbit-server/fastify@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@orbit-server/fastify/-/fastify-0.8.0.tgz#2a0ebff125cdb14137f4e22fecdabfa3b7b23f92"
+  integrity sha512-FN1nyLFt/mUpeZN+rDQgm3cVc1Cln8q3DkZiiajjh37tO201kFczJPl+jwcUUJqxwT7d3AejVqC1xGC5Mo6KnQ==
   dependencies:
-    "@orbit-server/core" "^0.1.2"
-    apollo-server-fastify "^2.8.1"
+    "@orbit-server/core" "^0.2.0"
+    apollo-server-fastify "^2.9.0"
     fastify "^2.7.1"
     fastify-cors "^2.1.3"
     fastify-favicon "^2.0.0"
     fastify-helmet "^3.0.1"
     fastify-plugin "^1.6.0"
-    graphql "^14.4.2"
-    qs "^6.7.0"
+    graphql "^14.5.3"
+    qs "^6.8.0"
 
 "@orbit/core@^0.16.1":
   version "0.16.1"
@@ -47,7 +47,7 @@
   dependencies:
     "@orbit/utils" "^0.16.1"
 
-"@orbit/data@^0.16.0", "@orbit/data@^0.16.1":
+"@orbit/data@^0.16.1":
   version "0.16.1"
   resolved "https://registry.yarnpkg.com/@orbit/data/-/data-0.16.1.tgz#a4f5945ff9345f9ef0390ee536d72bfbfb219dde"
   integrity sha512-goIgkDeyIr8t5hEu0Wf/H9UQLek/TeIvnKO8SKduuEwKQ9vu/1EGGTooCUyQfvy7QIWYO/zBXBIjbukxqFFF3g==
@@ -55,7 +55,7 @@
     "@orbit/core" "^0.16.1"
     "@orbit/utils" "^0.16.1"
 
-"@orbit/jsonapi@^0.16.0":
+"@orbit/jsonapi@^0.16.1":
   version "0.16.1"
   resolved "https://registry.yarnpkg.com/@orbit/jsonapi/-/jsonapi-0.16.1.tgz#f2fc6dae0be00ca6f1e5052554cc52772b70830a"
   integrity sha512-BWwAc0Ma/O+Z4PZv2MXLSV8brj7U9uPfC0GPiMSdVYizTx6eHqwldO8qDYiXvivnLIR7eiZ+8faVVk1a0qlNew==
@@ -65,7 +65,7 @@
     "@orbit/serializers" "^0.16.1"
     "@orbit/utils" "^0.16.1"
 
-"@orbit/record-cache@^0.16.0":
+"@orbit/record-cache@^0.16.1":
   version "0.16.1"
   resolved "https://registry.yarnpkg.com/@orbit/record-cache/-/record-cache-0.16.1.tgz#476ca43e196f83070c2aee3d6ca2937d9cc2b800"
   integrity sha512-/PyCOd/FtWmAtlkZ5JdAkdcYGT634SlfT91JkdZceeO9tYbID2O29MdNzzaiGpFC+4G57/pNN6Ow9pqYHMpvxg==
@@ -79,7 +79,7 @@
   resolved "https://registry.yarnpkg.com/@orbit/serializers/-/serializers-0.16.1.tgz#fc8bb0d4f897d6703029295d84dd04cd9630b134"
   integrity sha512-6JzpaMOrayYfI/6Nki9oqsbLl6cvpqZT9MJuP5Nm7Xr2G/n4Ns9g+A0JeRm/Nm5S0g9cneO9CRxYN/sRXcfhQw==
 
-"@orbit/utils@^0.16.0", "@orbit/utils@^0.16.1":
+"@orbit/utils@^0.16.1":
   version "0.16.1"
   resolved "https://registry.yarnpkg.com/@orbit/utils/-/utils-0.16.1.tgz#62a14d03768142b2f9983a830bf6216165d23f6f"
   integrity sha512-7iSVdf+EoQruEMAwH+5341yehXNG3lU5ucs/mojkKjz8HZ6YqgdToXLq/L/q1iX64pVqOhUZE2CJsg1d++vSvw==
@@ -487,7 +487,7 @@ apollo-server-express@2.9.0:
     subscriptions-transport-ws "^0.9.16"
     type-is "^1.6.16"
 
-apollo-server-fastify@^2.8.1:
+apollo-server-fastify@^2.9.0:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/apollo-server-fastify/-/apollo-server-fastify-2.9.0.tgz#3da3777113510d2e994eea2c02cf8ec7d0b6c131"
   integrity sha512-pPb9gqFHCjVELTcsmnHroRCUV3wWTxEDAQW3EX/WuMG/T4FktoOpk6NN+Y5GPh8YdtzJePq2wxbk4vCvat7ChA==
@@ -516,7 +516,7 @@ apollo-server-types@0.2.1:
     apollo-server-caching "0.5.0"
     apollo-server-env "2.4.1"
 
-apollo-server@^2.8.1:
+apollo-server@^2.9.0:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/apollo-server/-/apollo-server-2.9.0.tgz#32685712215d420ff5f3298b3b34e972e21ec1c6"
   integrity sha512-KouRjMWn8pnR4KvVsFXT1GZYzH53J0+v9KwnLUKrLNo2G4KiZu5KhP+tEkF7uTlpHzdPMQAIbwjdXKzOH/r6ew==
@@ -1926,7 +1926,7 @@ graphql-upload@^8.0.2:
     http-errors "^1.7.2"
     object-path "^0.11.4"
 
-graphql@^14.4.2, graphql@^14.5.3:
+graphql@^14.5.3:
   version "14.5.3"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-14.5.3.tgz#e025851cc413e153220f4edbbb25d49f55104fa0"
   integrity sha512-W8A8nt9BsMg0ZK2qA3DJIVU6muWhxZRYLTmc+5XGwzWzVdUdPVlAAg5hTBjiTISEnzsKL/onasu6vl3kgGTbYg==
@@ -2484,7 +2484,7 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
   integrity sha512-s5kLOcnH0XqDO+FvuaLX8DDjZ18CGFk7VygH40QoKPUQhW4e2rvM0rwUq0t8IQDOwYSeLK01U90OjzBTme2QqA==
 
-knex@^0.19.1:
+knex@^0.19.2:
   version "0.19.2"
   resolved "https://registry.yarnpkg.com/knex/-/knex-0.19.2.tgz#056efdb33fb8c77d3d76266b5d1d12dc483c21b5"
   integrity sha512-TVYvlp2esS4LjjJSz8XuE48bPJq4N3lWnETQVgJ3hXPEqjiDjxcTa3bCn6F5ipQuBaMAAaFHNrqsZm7BttogdA==
@@ -2969,26 +2969,26 @@ once@^1.3.0, once@^1.3.1, once@^1.4.0:
   dependencies:
     wrappy "1"
 
-orbit-graphql-schema@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/orbit-graphql-schema/-/orbit-graphql-schema-0.1.1.tgz#4109d9cbc9aaecf273adc352888e1010c0cfb4e7"
-  integrity sha512-Kjw7KTmahdgJEJDq7duleUix/zlN7gvS3ArkhmdsDuSeJJ/vXBAmz5/azihcqukMAgaVQIT9uwP1cB+Y3bWlSw==
+orbit-graphql-schema@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/orbit-graphql-schema/-/orbit-graphql-schema-0.1.2.tgz#41406ecf9a14db10278b1457eac13e50ec1a213f"
+  integrity sha512-NkuDqjzQzz9t9z6w9FiBTbZIC9A0AdyVrc5qtzWeJENE8xGKs737fQhMz+HV25zeFlPUfo4qsTu/rehB57Btlg==
   dependencies:
-    "@orbit/data" "^0.16.0"
-    "@orbit/utils" "^0.16.0"
+    "@orbit/data" "^0.16.1"
+    "@orbit/utils" "^0.16.1"
     dataloader "^1.4.0"
-    graphql "^14.4.2"
+    graphql "^14.5.3"
     graphql-iso-date "^3.6.1"
 
-orbit-sql@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/orbit-sql/-/orbit-sql-0.1.1.tgz#f3d7090b2d8217097ba8c1770aa81e87210e1260"
-  integrity sha512-kto2HYFSIMrX3rAf2xHv6WjxGw1cfb1UZ319M57XOSJCBNfyAsR0LCNqBgLVif2At1yifIVHmjsmng5u7L9GfA==
+orbit-sql@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/orbit-sql/-/orbit-sql-0.1.2.tgz#68bc871630fec49f27aedf73f956913253981d2b"
+  integrity sha512-oDA/YLdgdvifWjcmCKKcGJUC0lzLt8AFrqWRypCpyPaafW1dEt+MPjCqBzDXmvP1hAYBXy2KRO3qnQeILnniyw==
   dependencies:
-    "@orbit/data" "^0.16.0"
-    "@orbit/record-cache" "^0.16.0"
+    "@orbit/data" "^0.16.1"
+    "@orbit/record-cache" "^0.16.1"
     inflected "^2.0.4"
-    knex "^0.19.1"
+    knex "^0.19.2"
 
 ordered-read-streams@^1.0.0:
   version "1.0.1"
@@ -3295,7 +3295,7 @@ qs@6.7.0:
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
   integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
 
-qs@^6.7.0:
+qs@^6.8.0:
   version "6.8.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.8.0.tgz#87b763f0d37ca54200334cd57bb2ef8f68a1d081"
   integrity sha512-tPSkj8y92PfZVbinY1n84i1Qdx75lZjMQYx9WZhnkofyxzw2r7Ho39G3/aEvSUdebxpnnM4LZJCtvE/Aq3+s9w==
