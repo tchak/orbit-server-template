@@ -2,7 +2,7 @@ import { Config } from 'knex';
 import { pluralize, singularize } from 'inflected';
 import { Schema, ModelDefinition } from '@orbit/data';
 import { FastifyInstance } from 'fastify';
-import Server from '@orbit-server/fastify';
+import OrbitServer from '@orbit-server/fastify';
 import SQLSource from 'orbit-sql';
 import plugin from 'fastify-plugin';
 
@@ -27,7 +27,7 @@ export default plugin(function(fastify, _, next) {
     knex: loadConfig(fastify)
   });
 
-  const server = new Server({
+  const server = new OrbitServer({
     source,
     jsonapi: true,
     graphql: true
