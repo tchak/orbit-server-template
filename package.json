@@ -16,7 +16,7 @@
     "routes": "yarn fastify print-routes ./dist/src/app.js",
     "postinstall": "tsc",
     "start": "tsc-watch --onSuccess \"yarn start:dev\"",
-    "test": "qunit --require ts-node/register 'test/**/*-test.ts'",
+    "test": "NODE_ENV=test qunit --require ts-node/register 'test/**/*-test.ts'",
     "start:dev": "fastify start -l info -P dist/src/app.js",
     "start:heroku": "fastify start -a '0.0.0.0' -l info dist/src/app.js"
   },
