@@ -9,7 +9,7 @@
     "fastify-cli": "^1.2.0",
     "fastify-plugin": "^1.6.0",
     "inflected": "^2.0.4",
-    "orbit-sql": "^0.2.0",
+    "orbit-sql": "^0.3.0",
     "sqlite3": "^4.1.0"
   },
   "scripts": {

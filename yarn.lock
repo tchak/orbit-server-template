@@ -65,15 +65,6 @@
     "@orbit/serializers" "^0.16.1"
     "@orbit/utils" "^0.16.1"
 
-"@orbit/record-cache@^0.16.1":
-  version "0.16.1"
-  resolved "https://registry.yarnpkg.com/@orbit/record-cache/-/record-cache-0.16.1.tgz#476ca43e196f83070c2aee3d6ca2937d9cc2b800"
-  integrity sha512-/PyCOd/FtWmAtlkZ5JdAkdcYGT634SlfT91JkdZceeO9tYbID2O29MdNzzaiGpFC+4G57/pNN6Ow9pqYHMpvxg==
-  dependencies:
-    "@orbit/core" "^0.16.1"
-    "@orbit/data" "^0.16.1"
-    "@orbit/utils" "^0.16.1"
-
 "@orbit/serializers@^0.16.1":
   version "0.16.1"
   resolved "https://registry.yarnpkg.com/@orbit/serializers/-/serializers-0.16.1.tgz#fc8bb0d4f897d6703029295d84dd04cd9630b134"
@@ -2996,13 +2987,12 @@ orbit-graphql-schema@^0.1.2:
     graphql "^14.5.3"
     graphql-iso-date "^3.6.1"
 
-orbit-sql@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/orbit-sql/-/orbit-sql-0.2.0.tgz#6ed335e372a89aa84a08d73dc90458b9c2a3a551"
-  integrity sha512-JyQ6EoG+huNXITFYNtVubwg3G28+Pr62wal0w1h/vThFvMH8xe/eg9FD65QREDqojMjYbbGgv+cLOJMkMquX5g==
+orbit-sql@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/orbit-sql/-/orbit-sql-0.3.0.tgz#901442947b9cd60fdfabb4280ec474d098daf051"
+  integrity sha512-KUtSMOuIQlro682WkUFMOj47sRPQx3Xu5ikQyQxVFnwnebaH1IFHkXl/+mhkToB9jXTojdVBGJYfmEVsLpGvjA==
   dependencies:
     "@orbit/data" "^0.16.1"
-    "@orbit/record-cache" "^0.16.1"
     inflected "^2.0.4"
     knex "^0.19.3"
     objection "^1.6.9"
