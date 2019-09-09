@@ -1,6 +1,6 @@
-# Orbit Server Template
+# Orbit Server Template [![Build Status](https://github.com/tchak/orbit-server-template/workflows/CI/badge.svg)](https://github.com/tchak/orbit-server-template/actions)
 
-A template repository for orbit server
+A template repository for [orbit-server](https://github.com/tchak/orbit-server)
 
 ## Usage
 
@@ -19,3 +19,7 @@ You can print all available endpoints by running:
 ``` bash
 yarn routes
 ```
+
+## License
+
+MIT License (see LICENSE for details).
