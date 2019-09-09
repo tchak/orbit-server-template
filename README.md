@@ -20,6 +20,13 @@ You can print all available endpoints by running:
 yarn routes
 ```
 
+You can execute tests by running:
+
+``` bash
+yarn lint
+yarn test
+```
+
 ## License
 
 MIT License (see LICENSE for details).
