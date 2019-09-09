@@ -6,13 +6,13 @@ QUnit.module('planet', function(hooks) {
 
   QUnit.module('empty', function() {
     QUnit.test('findRecords', async function(assert) {
-      let response = await context.request('/planets');
+      const response = await context.request('/planets');
 
       assert.deepEqual(response.body, { data: [] });
     });
 
     QUnit.test('findRecord', async function(assert) {
-      let response = await context.request('/planets/earth');
+      const response = await context.request('/planets/earth');
 
       assert.equal(response.status, 404);
     });
@@ -35,27 +35,33 @@ QUnit.module('planet', function(hooks) {
     });
 
     QUnit.test('findRecords', async function(assert) {
-      let response = await context.request('/planets');
+      const response = await context.request('/planets');
 
-      assert.deepEqual(response.body, { data: [{
-        type: 'planets',
-        id: 'earth',
-        attributes: {
-          name: 'Earth'
-        }
-      }] });
+      assert.deepEqual(response.body, {
+        data: [
+          {
+            type: 'planets',
+            id: 'earth',
+            attributes: {
+              name: 'Earth'
+            }
+          }
+        ]
+      });
     });
 
     QUnit.test('findRecord', async function(assert) {
-      let response = await context.request('/planets/earth');
+      const response = await context.request('/planets/earth');
 
-      assert.deepEqual(response.body, { data: {
-        type: 'planets',
-        id: 'earth',
-        attributes: {
-          name: 'Earth'
+      assert.deepEqual(response.body, {
+        data: {
+          type: 'planets',
+          id: 'earth',
+          attributes: {
+            name: 'Earth'
+          }
         }
-      } });
+      });
     });
   });
 });

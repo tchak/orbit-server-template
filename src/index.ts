@@ -9,7 +9,7 @@ import plugin from 'fastify-plugin';
 import schemaJson from './schema.json';
 import * as config from './knexfile';
 
-function loadConfig(fastify: FastifyInstance) {
+function loadConfig(fastify: FastifyInstance): Config {
   const env = process.env.NODE_ENV || 'development';
   fastify.log.info(`Starting in "${env}" environment`);
   return (config as Record<string, Config>)[env];

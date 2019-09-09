@@ -2,7 +2,10 @@ import Fastify, { FastifyInstance, HTTPInjectOptions, Plugin } from 'fastify';
 import { IncomingMessage, Server, ServerResponse } from 'http';
 
 export interface TestContext {
-  request: (url: string, options?: Partial<HTTPInjectOptions>) => Promise<HTTPResponse>;
+  request: (
+    url: string,
+    options?: Partial<HTTPInjectOptions>
+  ) => Promise<HTTPResponse>;
 }
 
 export interface HTTPResponse {
@@ -11,7 +14,24 @@ export interface HTTPResponse {
   body: unknown;
 }
 
-export default function<T>(app: Plugin<Server, IncomingMessage, ServerResponse, T>, hooks: NestedHooks) {
+export async function request(
+  fastify: FastifyInstance,
+  url: string,
+  options?: Partial<HTTPInjectOptions>
+): Promise<HTTPResponse> {
+  const response = await fastify.inject({ url, ...options });
+
+  return {
+    status: response.statusCode,
+    headers: response.headers as any,
+    body: JSON.parse(response.payload)
+  };
+}
+
+export default function<T>(
+  app: Plugin<Server, IncomingMessage, ServerResponse, T>,
+  hooks: NestedHooks
+): TestContext {
   let fastify: FastifyInstance;
   const context: TestContext = {
     request(url: string, options?: Partial<HTTPInjectOptions>) {
@@ -26,14 +46,4 @@ export default function<T>(app: Plugin<Server, IncomingMessage, ServerResponse, 
     await fastify.close();
   });
   return context;
-}
-
-export async function request(fastify: FastifyInstance, url: string, options?: Partial<HTTPInjectOptions>): Promise<HTTPResponse> {
-  const response = await fastify.inject({ url, ...options });
-
-  return {
-    status: response.statusCode,
-    headers: response.headers as any,
-    body: JSON.parse(response.payload)
-  };
 }
