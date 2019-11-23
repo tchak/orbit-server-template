@@ -4,12 +4,12 @@
   "author": "Paul Chavard",
   "license": "MIT",
   "dependencies": {
-    "@orbit-server/fastify": "^0.8.2",
-    "fastify": "^2.8.0",
-    "fastify-cli": "^1.2.0",
+    "@orbit-server/fastify": "^0.8.3",
+    "fastify": "^2.10.0",
+    "fastify-cli": "^1.3.0",
     "fastify-plugin": "^1.6.0",
     "inflected": "^2.0.4",
-    "orbit-sql": "^0.3.0",
+    "orbit-sql": "^0.3.1",
     "sqlite3": "^4.1.0"
   },
   "scripts": {
@@ -22,21 +22,21 @@
     "start:heroku": "fastify start -a '0.0.0.0' -l info dist/src/app.js"
   },
   "engines": {
-    "node": "12.x"
+    "node": ">= 12.x"
   },
   "devDependencies": {
     "@types/inflected": "^1.1.29",
-    "@types/node": "^12.7.4",
+    "@types/node": "^12.12.12",
     "@types/qunit": "^2.9.0",
-    "qunit": "^2.9.2",
-    "ts-node": "^8.3.0",
-    "tsc-watch": "^3.0.1",
-    "typescript": "^3.6.2",
-    "@typescript-eslint/eslint-plugin": "^2.2.0",
-    "@typescript-eslint/parser": "^2.2.0",
-    "eslint": "^6.3.0",
-    "eslint-config-prettier": "^6.2.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "prettier": "^1.18.2"
+    "@typescript-eslint/eslint-plugin": "^2.8.0",
+    "@typescript-eslint/parser": "^2.8.0",
+    "eslint": "^6.7.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.19.1",
+    "qunit": "^2.9.3",
+    "ts-node": "^8.5.2",
+    "tsc-watch": "^4.0.0",
+    "typescript": "^3.7.2"
   }
 }
