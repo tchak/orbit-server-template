@@ -2,18 +2,17 @@ module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module'
+    ecmaVersion: 2020,
+    sourceType: 'module',
   },
   extends: [
     'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
   ],
   env: {
-    node: true
+    node: true,
   },
   rules: {
-    '@typescript-eslint/no-explicit-any': ['off']
-  }
+    '@typescript-eslint/no-explicit-any': ['off'],
+  },
 };
