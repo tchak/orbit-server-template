@@ -7,7 +7,7 @@
     "koa": "^2.13.1",
     "koa-orbit": "^0.2.1",
     "orbit-sql": "^0.4.2",
-    "sqlite3": "^5.0.2"
+    "sqlite3": "^5.0.3"
   },
   "scripts": {
     "dev": "ts-node-dev src/index.ts",
